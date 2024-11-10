@@ -164,14 +164,16 @@ background-color: #2e2f42;
     overflow: hidden;
     clip: rect(0, 0, 0, 0);
     white-space: nowrap;
-    border: 0;
+    clip-path: inset(100%);
+}
+.features-section{
+padding: 120px 0;
 }
 
 .features-list{
 display: flex;
 align-items: center;
 gap: 24px;
-padding: 120px 0;
 justify-content: center;
 }
 
@@ -262,12 +264,14 @@ padding: 120px 0;
     display: flex;
     align-items: center;
     flex-wrap: wrap;
-    gap: 24px;
+    row-gap: 48px;
+    column-gap: 24px;
 }
 
 .portfolio-item-container{
     padding: 32px 16px;
     border: 1px solid #e7e9fc;
+    border-top: none;
 }
 
 .portfolio-item{
